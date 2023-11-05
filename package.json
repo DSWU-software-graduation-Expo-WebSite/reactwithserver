@@ -1,0 +1,21 @@
+{
+  "name": "expof",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.0.0",
+    "mongoose": "^7.5.1",
+    "nodemon": "2.0.15",
+    "react-swiper": "^0.1.5",
+    "react-youtube": "^10.1.0",
+    "scss": "^0.2.4",
+    "swiper": "^10.2.0"
+  },
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "proxy": "http://localhost:8080"
+}
