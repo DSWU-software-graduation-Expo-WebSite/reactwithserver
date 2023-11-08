@@ -85,7 +85,7 @@ const collectionName = 'project';
 async function connectMongoDB() {
   try {
     const client = await mongodb.MongoClient.connect(mongoURL, {
-      useNewUrlParser: true,
+      useNewUrlParsers: true,
       useUnifiedTopology: true,
     });
     console.log('connect')
