@@ -76,7 +76,7 @@ function AIKIOSK(){
 
     const sendComment = () => {
       if(cbValue)
-       axios.post("http://localhost:3000/projects/"+objectId+"/comments", {
+       axios.post("http://3.36.64.144/projects/"+objectId+"/comments", {
     
         "createBy" : cbValue,
         "password" : pwValue,
@@ -275,7 +275,7 @@ function AIKIOSK(){
 
       function PlusData () {
     
-            axios.put("http://localhost:3000/projects/"+objectId+"/likeplus")
+            axios.put("http://3.36.64.144/projects/"+objectId+"/likeplus")
             .then(()=> {
               console.log('업데이트가 성공했습니다.');
             })
@@ -287,7 +287,7 @@ function AIKIOSK(){
         }
         function MinusData () {
     
-            axios.put('http://localhost:3000/projects/'+objectId+'/likeminus')
+            axios.put('http://3.36.64.144/projects/'+objectId+'/likeminus')
             .then(()=> {
               console.log('업데이트가 성공했습니다.');
             })
@@ -300,7 +300,7 @@ function AIKIOSK(){
 
         async function fetchData() {
             try {
-            const response = await axios.get('http://localhost:3000/projects/'+objectId+'/likes');
+            const response = await axios.get('http://3.36.64.144/projects/'+objectId+'/likes');
 
             const jsonString = JSON.stringify(response.data);
              const dataArray = JSON.parse(jsonString);
@@ -316,7 +316,7 @@ function AIKIOSK(){
 
         async function fetchData2() {
             try {
-            const response = await axios.get('http://localhost:3000/projects/'+objectId+'/comments');
+            const response = await axios.get('http://3.36.64.144/projects/'+objectId+'/comments');
             const jsonString = JSON.stringify(response.data);
             // console.log(jsonString);
             const dataArray = JSON.parse(jsonString);
