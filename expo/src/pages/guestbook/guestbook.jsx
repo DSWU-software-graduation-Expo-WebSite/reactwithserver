@@ -20,7 +20,7 @@ function GuestBook(props){
     // 비동기 함수 정의
     async function fetchData() {
       try {
-        const response = await axios.get('https://c8a3-125-128-219-177.ngrok-free.app/projects/64fe0b75d198dbed47e2e9fa/comments');
+        const response = await axios.get('http://ec2-3-36-64-144.ap-northeast-2.compute.amazonaws.com/projects/64fe0b75d198dbed47e2e9fa/comments');
         const jsonString = JSON.stringify(response.data);
        // console.log(jsonString);
         const dataArray = JSON.parse(jsonString);
@@ -82,7 +82,7 @@ function GuestBook(props){
       console.log("클릭했습니다.")
 
       if(cbValue)
-       axios.post("https://c8a3-125-128-219-177.ngrok-free.app/projects/64fe0b75d198dbed47e2e9fa/comments", {
+       axios.post("http://ec2-3-36-64-144.ap-northeast-2.compute.amazonaws.com/64fe0b75d198dbed47e2e9fa/comments", {
     
         "createBy" : cbValue,
         "password" : pwValue,
