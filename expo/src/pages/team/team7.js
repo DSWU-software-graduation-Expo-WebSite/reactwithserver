@@ -194,7 +194,7 @@ function BBANGYA(){
           
         } else if (result.isDenied) {
           window.location.reload();
-          Swal.fire('댓글삭제를 취소하셨습니다.', '', 'info')
+          Swal.fire('댓글수정을 취소하셨습니다.', '', 'info')
    
         }
       })

@@ -201,7 +201,7 @@ function GuestBook(props){
           
         } else if (result.isDenied) {
           window.location.reload();
-          Swal.fire('댓글삭제를 취소하셨습니다.', '', 'info')
+          Swal.fire('댓글수정을 취소하셨습니다.', '', 'info')
    
         }
       })
@@ -256,7 +256,7 @@ function GuestBook(props){
             // 댓글 삭제 실패 또는 권한 오류
             
    
-            console.error('댓글 삭제 실패 또는 권한 오류');
+            Swal.fire('댓글을 작성할 수 없습니다.', '', 'info')
           
           }
         })

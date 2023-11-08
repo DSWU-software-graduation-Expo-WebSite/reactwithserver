@@ -12,7 +12,7 @@ const cors = require('cors');
 app.use(cors());
 
 app.listen(3000, function(){
-    console.log('listening on 8080')
+    //console.log('listening on 3000')
 })
 app.use(express.static(path.join(__dirname,'expo/build')));
 app.get('/', function(req,res){
@@ -72,7 +72,7 @@ app.get('/guestbook', function(req,res){
 
 exports.mongoDB=()=>{
     mongoose.connect('mongodb+srv://haein:haein6893@atlascluster.5ribwrk.mongodb.net/').then(()=>
-    console.log('connected')).catch(()=>console.log('failed'));
+    console.log('mongoDB connected')).catch(()=>console.log('failed'));
 }
 
 
@@ -85,9 +85,8 @@ const collectionName = 'project';
 async function connectMongoDB() {
   try {
     const client = await mongodb.MongoClient.connect(mongoURL, {
-
     });
-    console.log('connect')
+    //console.log('connect')
     return client.db(dbName).collection(collectionName);
     
   } catch (error) {
@@ -155,9 +154,9 @@ app.post('/projects/:projectId/comments', async (req, res) => {
         createDate: new Date(),
       };
 
-      console.log(new mongodb.ObjectId(projectId))
+     // console.log(new mongodb.ObjectId(projectId))
 
-      console.log(comment)
+      //console.log(comment)
 
    
       // MongoDB에 댓글 정보 추가
@@ -216,8 +215,8 @@ function generateCommentId() {
   
       // 해당 프로젝트의 전체 댓글 조회
       const comments = project.comments;
-      console.log("comments 는 "+comments[0].createBy.toString())
-      console.log(res.json(comments));
+     // console.log("comments 는 "+comments[0].createBy.toString())
+      //console.log(res.json(comments));
 
     } catch (error) {
 
