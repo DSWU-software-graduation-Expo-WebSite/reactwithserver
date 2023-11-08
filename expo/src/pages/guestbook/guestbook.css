@@ -1,0 +1,398 @@
+
+
+
+
+/*PC*/
+@media screen and (min-width: 760px)  {
+.front_mobile{
+    display: none;
+}
+.cmt_container {
+    opacity: 0;  /* 초기에 투명하게 설정 */
+    /* 초기에 약간 아래로 이동 */
+    transform: translateY(10px);
+    transition: opacity 5s ease, transform 5s ease; /* 트랜지션 설정 */       
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+    
+.cmt_container.show {
+    opacity: 1;
+    transform: translateY(0);
+        
+    /* 나타날 때 투명도를 1로 설정 */
+    /* 나타날 때 원래 위치로 이동 */
+}
+    
+/*
+.cmt_container{
+
+
+}*/
+
+.cmtcontainer  {
+    padding: 18px;
+   
+    margin-top: 4vh;
+    border-radius: 50px ;
+    border: solid 8px black;
+
+    width:28vw;
+    height:50vh;
+    font-size: 1.4vw;
+    font-family: "Apple";
+   
+
+}
+
+.contentbox{
+    width:98%;
+    height: 70%;
+    border: 0;
+    border-radius: 8px;
+    outline: none;
+}
+
+
+.frombox{
+    display: flex;
+    flex-direction: column;
+    height:20%;
+}
+
+.frombox .sub_frombox{
+
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+
+}
+.frombox .sub_frombox .namebox{
+width: 49%;
+}
+.frombox .sub_frombox .pswdbox{
+width: 49%;
+}
+
+
+.namebox{
+    height: 100%;
+    width: 49%;
+    border: 0;
+    border-radius: 2px;
+    outline: none;
+    font-family: "Apple";
+    font-size:"1vw"
+}
+
+.pswdbox{
+    height: 100%;
+    width: 49%;
+    border:0;
+    border-radius: 2px;
+    outline: none;
+    font-family: "Apple";
+    font-size:"1vw"
+}
+
+.phonenumbox{
+    border:0;
+    font-family: "Apple";
+    font-size:"1vw";
+    outline: none;
+}
+
+.btn{
+    color:white;
+    background-color: black;
+    width:94%;
+    border-radius: 50px;
+    height: 10%;
+    margin: 0 auto;
+    font-size:"0.8vw";
+    
+}
+
+
+
+.comment{
+    margin-top: 4vh;
+    border-radius: 50px ;
+    border: solid 8px black;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+    font-family: 'Apple';
+    
+    width:28vw;
+    height:50vh;
+    
+    overflow: auto;
+    
+}
+
+.comment .content{
+    font-size: 1.4vw;
+    margin:0 auto;
+    width: 100%;
+    height: 60%;
+    
+
+}
+.comment .writer{
+    margin-top: auto;
+    width: 100%;
+    height: 6%;
+    font-family: "Apple";
+    text-align: right;
+
+}
+.comment .date{
+    
+    margin-top: auto;
+    width: 100%;
+    height: 6%;
+    text-align: right;
+    font-family: "Apple";
+
+}
+
+.forEditor{
+    margin-top: auto;
+    width:100%;
+
+    display: flex;
+    flex-direction: row;
+   
+    
+
+    
+}
+
+.forEditor .edit{
+
+
+  
+    margin:0 auto;
+    width:50%;
+    font-size: 1vw;
+    align-items: center;
+
+    
+    color: black;
+    text-align: center;
+}
+.forEditor .delete{
+
+    align-items: center;
+   
+    width:50%;
+    font-size: 1vw;
+    color: black;
+    text-align: center;
+}
+
+}
+
+
+
+/*mobile*/
+@media screen and (max-width: 760px)  {
+
+.front{
+    display: none;
+}
+
+
+.cmt_container {
+    opacity: 0;  /* 초기에 투명하게 설정 */
+    /* 초기에 약간 아래로 이동 */
+    transform: translateY(10px);
+    transition: opacity 5s ease, transform 5s ease; /* 트랜지션 설정 */       
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+    
+.cmt_container.show {
+    opacity: 1;
+    transform: translateY(0);
+        
+    /* 나타날 때 투명도를 1로 설정 */
+    /* 나타날 때 원래 위치로 이동 */
+}
+
+.cmtcontainer  {
+    padding: 18px;
+   
+    margin-top: 4vh;
+    border-radius: 50px ;
+    border: solid 8px black;
+
+    width:80vw;
+    height:50vh;
+    font-size: 3vw;
+    font-family: "Apple";
+   
+
+}
+
+.contentbox{
+    width:98%;
+    height: 70%;
+    border: 0;
+    border-radius: 8px;
+    outline: none;
+}
+
+
+.frombox{
+    display: flex;
+    flex-direction: column;
+    height:20%;
+}
+
+.frombox .sub_frombox{
+
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+
+}
+.frombox .sub_frombox .namebox{
+width: 49%;
+}
+.frombox .sub_frombox .pswdbox{
+width: 49%;
+}
+
+
+.namebox{
+    height: 100%;
+    width: 49%;
+    border: 0;
+    border-radius: 2px;
+    outline: none;
+    font-family: "Apple";
+    font-size: 3vw;
+}
+
+.pswdbox{
+    height: 100%;
+    width: 49%;
+    border:0;
+    border-radius: 2px;
+    outline: none;
+    font-family: "Apple";
+    font-size: 3vw;
+}
+
+.phonenumbox{
+    border:0;
+    font-family: "Apple";
+    font-size: 3vw;
+    outline: none;
+}
+
+.btn{
+    color:white;
+    background-color: black;
+    width:94%;
+    border-radius: 50px;
+    height: 10%;
+    margin: 0 auto;
+    font-size: 3vw;
+    
+}
+
+
+
+.comment{
+    margin-top: 4vh;
+    border-radius: 50px ;
+    border: solid 8px black;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+    font-family: 'Apple';
+    
+    width:80vw;
+    height:50vh;
+    
+    overflow: auto;
+    
+}
+
+.comment .content{
+    font-size: 3vw;
+    margin:0 auto;
+    width: 100%;
+    height: 60%;
+    
+
+}
+.comment .writer{
+    margin-top: auto;
+    width: 100%;
+    height: 6%;
+    font-family: "Apple";
+    text-align: right;
+    font-size: 3vw;
+
+}
+.comment .date{
+    
+    margin-top: auto;
+    width: 100%;
+    height: 6%;
+    text-align: right;
+    font-family: "Apple";
+    font-size: 3vw;
+}
+
+.forEditor{
+    margin-top: auto;
+    width:100%;
+
+    display: flex;
+    flex-direction: row;
+   
+    
+
+    
+}
+
+.forEditor .edit{
+
+
+  
+    margin:0 auto;
+    width:50%;
+    font-size: 3vw;
+    align-items: center;
+
+    
+    color: black;
+    text-align: center;
+}
+.forEditor .delete{
+
+    align-items: center;
+   
+    width:50%;
+    font-size: 3vw;
+    color: black;
+    text-align: center;
+}
+
+}
+
+
+  

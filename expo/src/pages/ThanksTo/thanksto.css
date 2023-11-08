@@ -1,0 +1,178 @@
+
+/*모바일일때*/
+@media screen and (max-width: 760px) {
+  .thankstocontent{
+    display: none;
+  }
+
+  .front{
+    display: none;
+  }
+  
+  .enti{
+    font-size: 5vw;
+    text-align: left;
+    vertical-align : middle;
+    font-weight: bold;
+    font-family: 'intelone-mono-font-family-regular';
+    width:100vw;
+    height:90vh;
+    margin-top: 10vh;
+    opacity: 0;  /* 초기에 투명하게 설정 */
+    /* 초기에 약간 아래로 이동 */
+    transform: translateY(10px);
+    transition: opacity 5s ease, transform 5s ease; /* 트랜지션 설정 */
+    
+  }
+ 
+  
+  .enti.show {
+    margin-top: 20vh;
+    opacity: 1;
+    transform: translateY(0);            /* 나타날 때 투명도를 1로 설정 */
+    /* 나타날 때 원래 위치로 이동 */
+  }
+  
+  .enti .bookmark{
+    margin : 0 auto;
+    width:80%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5vh;
+  }
+  
+  
+  .enti .bookmark> button{
+    background-color: white;
+    color:rgb(37, 37, 37) ;
+    width:100%;
+    height:6.5vh;
+    font-size: 4.5vw;
+    font-weight: bolder;
+    font-family: 'intelone-mono-font-family-regular';
+    border: solid rgb(37, 37, 37) ;
+    border-width: 3px ;
+    margin-top: 0.7vh;
+    border-radius: 30px;
+  
+    &.active {
+      /* 부모 요소가 클래스명이 "active"인 경우에 적용되는 스타일 */
+      background-color: rgb(37, 37, 37);
+      color: white;
+      
+    }
+
+  }
+
+  .enti .bookmark> button .active{
+    /* 부모 요소가 클래스명이 "active"인 경우에 적용되는 스타일 */
+      background-color: rgb(37, 37, 37);
+      color: white;
+     
+  
+  }
+  .bookmark_content{
+    
+    margin: 0 auto;
+    padding-bottom:7vw;
+    
+    width: 90vw;
+  
+  }
+  
+
+  
+
+}
+
+
+
+
+/*pc*/
+@media screen and (min-width: 760px) {
+
+  .thankstomobile{
+    display: none;
+  }
+
+  .front_mobile{
+    display: none;
+  }
+
+  .enti{
+  
+      font-size: 5vw;
+      text-align: left;
+      vertical-align : middle;
+      font-weight: bold;
+      font-family: 'intelone-mono-font-family-regular';
+      width:100%;
+      height:90vh;
+      margin-top: 10vh;
+      opacity: 0;  /* 초기에 투명하게 설정 */
+      /* 초기에 약간 아래로 이동 */
+      transform: translateY(10px);
+      transition: opacity 5s ease, transform 5s ease; /* 트랜지션 설정 */
+      
+  }
+  
+  .enti.show {
+    margin-top: 35vh;
+    opacity: 1;
+    transform: translateY(0);            /* 나타날 때 투명도를 1로 설정 */
+    /* 나타날 때 원래 위치로 이동 */
+  }
+  
+  .enti .bookmark{
+    margin : 0 auto;
+    width:70%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5vh;
+  }
+  
+  
+  .enti .bookmark> button{
+    background-color: white;
+    color:rgb(37, 37, 37) ;
+    width:19%;
+    height:8vh;
+    font-size: 1.4vw;
+    font-weight: bolder;
+    font-family: 'intelone-mono-font-family-regular';
+    border: solid rgb(37, 37, 37) ;
+    border-width: 4px ;
+  
+    border-radius: 30px;
+  
+    &.active {
+      /* 부모 요소가 클래스명이 "active"인 경우에 적용되는 스타일 */
+      background-color: rgb(37, 37, 37);
+      color: white;
+      
+    }
+  }
+  
+  .bookmark_content{
+    margin:  0 auto;
+    
+    
+    width: 70%;
+  
+  }
+
+  .outerofthanksto{
+    width: 100%;
+  }
+  
+
+
+
+}
+
+
+

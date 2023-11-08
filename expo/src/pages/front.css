@@ -1,0 +1,166 @@
+@keyframes fadeInDown {
+  0% {
+      opacity: 0;
+      left: 50%;
+          
+      transform: translate3d(-50%, -100%, 0);
+  }
+  to {
+      opacity: 1;
+      left: 50%;
+      transform: translate3d(-50%, 0, 0);
+  }
+}
+
+
+
+@keyframes example {
+0%   {
+  width: 0ch;
+  opacity: 0;
+  top:0%;
+  left:50%;
+ }
+
+
+to  {
+  width: 100%;
+  opacity: 1;
+
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 760px)  {
+  .test_obj{display: none;}
+
+  .test_obj_mobile {
+ 
+    /*수직 중양정렬*/
+    position:absolute;
+    top:85%;
+
+    /*수평 중양정렬*/
+    left: 50%;
+    transform: translate(-50%, 0);
+    /*------------*/
+      
+    animation: fadeInDown 2s;
+    font-family:"Apple-light";
+    font-size: 4vw;
+}
+
+.test_obj_scroll{
+  font-family:"Apple-light";
+  font-size: 6vw;
+}
+.test_obj_iconl{
+  width:40vw;
+}
+
+.text_outer{
+    height: 94vh;
+  }
+
+  .TEXT{
+
+    display: relative;
+    font-weight: bold;
+  
+    
+
+  }
+
+  
+  .sub_evelopers{
+    width:11ch;
+    font-family: 'Apple';
+    text-align: center;
+    overflow: hidden;
+    margin:0 auto; 
+    font-size: 15vw;
+    animation: example 2s;
+
+    /*수직 중양정렬*/
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+}
+
+
+
+
+/*PC*/
+@media screen and (min-width: 760px)  {
+
+
+
+.test_obj_mobile{
+  display: none;
+}
+    .test_obj {
+ 
+        /*수직 중양정렬*/
+        position:absolute;
+        top:82%;
+
+        /*수평 중양정렬*/
+        left: 50%;
+        transform: translate(-50%, 0);
+        /*------------*/
+          
+        animation: fadeInDown 2s;
+        font-family:"Apple-light";
+        font-size: 1.2vw;
+    }
+
+    .test_obj_scroll{
+      font-family:"Apple-light";
+      font-size: 2.4vw;
+    }
+
+    .text_outer{
+        height: 94vh;
+      }
+
+      .TEXT{
+    
+        display: relative;
+        font-weight: bold;
+        font-family: 'intelone-mono-font-family-regular';
+      }
+  
+      
+      .sub_evelopers{
+        width:11ch;
+        text-align: center;
+        overflow: hidden;
+        margin:0 auto; 
+        font-size: 10vw;
+        animation: example 2s;
+
+        /*수직 중양정렬*/
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /*------------*/
+  
+ 
+        /* 이거무제한키워드 */
+        /* top:200px;
+        left:0%; */
+        /* z-index:2147483647; */
+    
+      }
+
+   
+    
+
+
+}
+

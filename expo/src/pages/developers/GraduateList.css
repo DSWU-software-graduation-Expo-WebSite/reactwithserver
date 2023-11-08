@@ -1,0 +1,262 @@
+
+@font-face {
+  font-family: "Apple";
+  src: url("../../pages/asset/AppleSDGothicNeoUL.ttf");
+}
+@font-face {
+  font-family: "Apple-light";
+  src: url("../../pages/asset/AppleSDGothicNeoT.ttf");
+}
+
+@font-face {
+  font-family: "Apple-m";
+  src: url("../../pages/asset/AppleSDGothicNeoL.ttf");
+}
+
+@media print {
+  .icon-print {
+    text-indent: -10000px;
+  }
+}
+
+/*PC*/
+@media screen and (min-width: 768px)  {
+  .GraduateList {
+    opacity: 0;  /* 초기에 투명하게 설정 */
+    /* 초기에 약간 아래로 이동 */
+    transform: translateY(10px);
+    transition: opacity 5s ease, transform 5s ease; /* 트랜지션 설정 */
+  }
+  
+  .GraduateList.show {
+    opacity: 1;
+    transform: translateY(0);            /* 나타날 때 투명도를 1로 설정 */
+    /* 나타날 때 원래 위치로 이동 */
+  }
+  
+
+  .sub_con{
+    padding: 8px 20px 8px;
+    color:white;
+    background-color: black;
+    border: solid black 1px;
+    border-radius: 30px;
+    width:155px;
+    margin:auto;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'intelone-mono-font-family-regular';
+  }
+
+body {
+  white-space: pre-line;
+  
+}
+
+  .GraduateList {
+    padding-top: 10vh;
+
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    position: relative;
+  }
+
+  .GraduateList::after {
+    pointer-events: none;
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 100px;
+  }
+
+  .Member-Container {
+    width: 18vw;
+    display: inline-block;
+    flex-wrap: wrap;
+    margin: 20px;
+
+    position: relative;
+  }
+
+  .MemberWrap{
+    background-color: white;
+    position: relative;
+    margin: auto;
+  }
+
+  .MemberWrap::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #C4C4C4;
+    border-radius: 10% 10% 5% 5%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .MemberWrap a {
+    color:black;
+    text-decoration: none;
+  }
+
+  div[class^="d"] {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  div[class^="d"]::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .img {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5% 5% 0% 0%;
+  }
+
+  .img::after{
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }      
+
+  /*이름*/
+  .name {
+    width: 40%;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    font-family: 'intelone-mono-font-family-regular';
+    font-size: 1.2vw;
+    letter-spacing: 5px;
+    color: black;
+  }
+
+  /*팀명*/
+  .group {
+    
+    width: 40%;
+    text-align: right;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    padding-right: 10%;
+    font-family: 'intelone-mono-font-family-regular';
+    font-size: 1vw;
+    letter-spacing: 5px;
+    color: black;
+  }
+}
+
+/*모바일*/
+@media screen and (max-width: 768px) {
+  .GraduateList {
+    opacity: 0;  /* 초기에 투명하게 설정 */
+    /* 초기에 약간 아래로 이동 */
+    transform: translateY(10px);
+    transition: opacity 5s ease, transform 5s ease; /* 트랜지션 설정 */
+  }
+  
+  .GraduateList.show {
+    opacity: 1;
+    transform: translateY(0);            /* 나타날 때 투명도를 1로 설정 */
+    /* 나타날 때 원래 위치로 이동 */
+  }
+  
+
+  .Member-Container {
+    width: 70vw;
+    display: inline-block;
+    flex-wrap: wrap;
+    margin: 20px;
+
+    position: relative;
+  }
+
+  
+  .MemberWrap::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #C4C4C4;
+    border-radius: 5% 5% 5% 5%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5% 5% 0 0;
+    z-index: 99999;
+  }
+
+  .MemberWrap{
+    background-color: white;
+    
+    margin: auto;
+  }
+
+
+
+  .name {
+ 
+    text-align: center;
+    padding-top: 1vh;
+
+    
+    font-family: 'intelone-mono-font-family-regular';
+    font-size: 5vw;
+    letter-spacing: 2vw;
+    color: black;
+  }
+
+  /*팀명*/
+  .group {
+    
+   
+    text-align: center;
+ 
+    padding-bottom: 1vh;
+    
+    font-family: 'intelone-mono-font-family-regular';
+    font-size: 5vw;
+    letter-spacing: 1vw;
+    
+    color: black;
+  }
+
+
+}

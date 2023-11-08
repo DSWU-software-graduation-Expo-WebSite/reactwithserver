@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "AbhayaLibre";
+    src: url("../pages/asset/AbhayaLibre-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "Apple";
+    src: url("../pages/asset/AppleSDGothicNeoUL.ttf");
+}
+@font-face {
+    font-family: "Apple-light";
+    src: url("../pages/asset/AppleSDGothicNeoT.ttf");
+  }
+
+@font-face {
+    font-family: "Apple-m";
+    src: url("../pages/asset/AppleSDGothicNeoL.ttf");
+}
+
+@font-face {
+  font-family: 'intelone-mono-font-family-regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration-line: none;
+  /*   text-decoration-line: underline; */
+  /*   text-decoration-line: overline; */
+  /*   text-decoration-line: line-through; */
+  /*   text-decoration-line: underline line-through overline; */
+  }
+.outer_header{
+ display: flex;
+}
+
+.mobilenavBar{
+  display: none;
+}
+
+
+.navBar {
+  
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100vw;
+  }
+
+
+  .navBar_menus {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    list-style: none;
+    justify-content: space-around;
+  
+  }
+
+  .navBar_menus_menu a {
+    color: #d6d6d6;
+
+
+  }
+    /*PC*/
+    @media screen and (min-width: 760px) {
+
+     
+
+      .navBar{
+        height:6vh;
+      }
+
+      .navBar_menus {
+        display: flex;
+        margin:0 auto;
+        height:100%;
+        flex-direction: row;
+        background-color: black;
+        color:white;
+        list-style: none;
+        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+
+      
+      }
+      .navBar_menus_menu{
+        align-items: center;
+ 
+        
+      }
+      .navBar_menus >li>a{
+     
+        justify-content: center;
+        color:white;
+        
+      }
+
+      .navBar_menus_menu >a  {
+        /*a태그에 height 속성 주는 방법*/
+        display: block;
+        height: 100%;
+        font-family: 'intelone-mono-font-family-regular';
+        color: #d6d6d6;
+        font-size:1.2vw;
+        margin-right:2vw;
+      
+        text-align: center;
+        
+  
+
+    
+      }
+
+      .navBar_menus_menu :hover{
+        
+        color :cyan;
+      }
+
+   
+
+
+
+      
+    }
+
+
+  
+  /*모바일*/
+  @media screen and (max-width: 760px) {
+
+    /*모바일 일때 PC용 헤더 안보이게*/
+    .navBar {
+
+      display: none;
+    }
+
+    .mobilenavBar{
+   
+      top:0px;
+      z-index: 99999;
+ 
+      width: 100vw;
+      height: 6vh;
+      background-color: black;
+      display:block;
+      
+  }
+
+    .navBar_mobile_logo{
+      
+        display: block;
+        width:50vw;
+        height: 100%;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 400%;
+        letter-spacing: 0.5vw;
+        font-family: sans-serif;
+        font-size: 3vw;
+         
+      }
+
+      .backBtn{
+
+        display: flex;
+        align-items: center;
+        height:100%;
+        float:left;
+        margin-left: 2vw;
+        color:white;
+        
+     
+      }
+      
+    .toggleBtn{
+
+      display: flex;
+      align-items: center;
+      height:100%;
+      float:right;
+      margin-right: 2vw;
+      color:white;
+   
+    }
+    
+   
+    /*토글 버튼 클릭했을때*/
+
+    .mobilenavBarClick{
+    
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      transform: translateY(0);
+      
+    }
+    .toggleMenus{
+      color:white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left:0px;
+    }
+
+    .toggleBtnCancel{
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      margin-top:5vw;
+      margin-right:5vw;
+      color: white;
+      
+  
+    }
+
+    .toggleMenus > li{
+      display: flex;
+      align-items: center;
+      height:8vh;
+      color:white;
+      font-size: 3vh;
+      font-family: "Apple-m";
+      text-align: center;
+    }
+
+    .toggleMenus > li > a{
+
+        text-align: center;
+        color:white;
+        font-size: 3vh;
+        font-family: "Apple-m";
+
+    }
+
+    .navBar_toggleBtn {
+      display: flex;
+      width:200px;
+  
+    }
+
+
+  }

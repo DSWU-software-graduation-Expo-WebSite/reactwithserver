@@ -1,0 +1,291 @@
+
+
+@font-face {
+  font-family: "AbhayaLibre";
+  src: url("../asset/AbhayaLibre-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Apple";
+  src: url("../asset/AppleSDGothicNeoUL.ttf");
+}
+@media print {
+  .icon-print {
+      text-indent: -10000px;
+  }
+}
+
+@font-face {
+  font-family: "Apple-light";
+  src: url("../asset/AppleSDGothicNeoT.ttf");
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+
+
+
+.outerofproject{
+ 
+}
+
+/*모바일*/
+@media screen and (max-width: 760px){
+  * {
+      text-align: center;
+      
+  }
+  
+
+.projectMobile{
+
+  display:flex;
+  margin: 0 auto;
+  
+  
+}
+.projectlo{
+  margin: 0 auto;
+
+  padding-top:5vh;
+  opacity: 0;  /* 초기에 투명하게 설정 */
+  /* 초기에 약간 아래로 이동 */
+  transform: translateY(10px);
+  transition: opacity 5s ease, transform 5s ease; /* 트랜지션 설정 */
+}
+.projectlo .mobileTitle{
+  padding: 2vw;
+  border: solid black 4px;
+  border-radius: 50px;
+  margin-bottom :0.5vh;}
+.projectlo .projectName{
+  font-family: 'GmarketSansMedium';
+  font-size: 4vw;
+}
+.projectWho{
+  font-size:3vw;
+  color: black;
+}
+.projectlo.show {
+ 
+  opacity: 1;
+  transform: translateY(0);            /* 나타날 때 투명도를 1로 설정 */
+  /* 나타날 때 원래 위치로 이동 */
+}
+
+
+
+
+
+
+/*모바일일때 pc title 안보이게*/
+.every{
+  display:none;
+}
+
+
+
+
+
+
+}
+
+
+
+
+/*PC*/
+@media screen and (min-width: 760px){
+  * {
+      text-align: center;
+  }
+  
+  .projectMobile{
+    display:none
+  }
+
+
+
+
+   /*가장 상단의 PROJECTS 부분*/
+.oval_text {
+
+    margin-bottom: 30px;
+    font-family: "Apple";
+    background-color: black;
+    color: white;
+    border-radius: 80px;
+    padding: 10px 30px;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    white-space: nowrap;
+    box-sizing: border-box;
+
+}
+
+.oval_text_p {
+ 
+  opacity: 0;  /* 초기에 투명하게 설정 */
+  /* 초기에 약간 아래로 이동 */
+  transform: translateY(10px);
+  transition: opacity 5s ease, transform 5s ease; /* 트랜지션 설정 */
+  
+}
+
+.oval_text_p.show {
+  opacity: 1;
+  transform: translateY(0);            /* 나타날 때 투명도를 1로 설정 */
+  /* 나타날 때 원래 위치로 이동 */
+}
+
+.project_sub{
+  /* 수직 중앙 정렬하기 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 94vh;
+  margin-top : 13vh;
+}
+
+.every .oval_text_p{
+  
+  margin: 0 auto;
+  border-radius: 80px;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+
+  line-height: 1;
+  white-space: nowrap;
+  box-sizing: border-box;
+
+}
+  /*item들*/
+  .items{
+    margin-bottom: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 80px;
+    
+
+  }
+
+.array-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.array-content {
+    /*display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  gap: 10px;*/
+    display: table;
+    table-layout: fixed;
+    width: 60%;
+    gap: 10px;
+}
+
+.team {
+    /*display: table-cell;
+  white-space: nowrap;
+  text-align: left;*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 10px;
+    letter-spacing: 2.1px;
+    flex: 1;
+    font-size: 1.1vw;
+}
+
+
+.subject {
+    /*display: table-cell;
+  white-space: nowrap;
+  text-align: right;*/
+  font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    letter-spacing: 2.1px;
+    flex: 1;
+    font-size: 1.2vw;
+}
+
+
+.team-box {
+    display: flex;
+    align-items: center;
+}
+
+.subject-box {
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+}
+
+
+.subject-box .oval-box {
+    background-color: white;
+    color: black;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+
+.team-box .oval-box {
+    background-color: black;
+    color: white;
+    padding: 0px 10px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*뒷배경 타원*/
+.oval-box {
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    height: 4vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    font-family: 'Noto Sans KR', sans-serif;
+    border: 2px solid rgb(10, 10, 10);
+}
+
+
+
+
+/* 작은 박스 선택시 */
+.oval-box:hover {
+  background-color: pink;
+  color: white;
+  display: flex;
+
+}
+
+
+}
+
+
+/*전체 배경*/
+body {
+  background: white;
+
+}
+
+

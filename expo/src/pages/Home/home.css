@@ -1,0 +1,114 @@
+@font-face{
+    font-family:'bitbit';
+    src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') ;
+  }
+
+  @font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'D2Coding';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DOSPilgiMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/DOSPilgiMedium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Her-Gilwonok';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_ten@1.0/Her-Gilwonok.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*모바일일때*/
+@media screen and (max-width: 760px) {
+
+    .outerofhome{
+        position: relative;
+        margin:0 auto;
+        justify-content: center;
+        display:flex;
+        flex-direction: column;
+        height:80vh;
+
+    }
+    .outerofhome >img{
+        width: 90%;
+    }
+    
+    .homeText{
+    
+    font-size: 4vw;
+    font-family: 'Her-Gilwonok';
+    padding: 1vh;
+    letter-spacing: 0.2vw;
+    
+    }
+    
+    
+    .outerofhome >img{
+    margin: 0 auto;
+    
+    }
+}
+/*PC일때*/
+@media screen and (min-width: 760px) {
+
+
+    .outerofhome >img{
+        width: 50%;
+    }
+    .outerofhome{
+        position: relative;
+        margin:0 auto;
+        justify-content: center;
+        display:flex;
+        flex-direction: column;
+        height:94vh;
+        width:100%;
+    
+        /*background-image : url("../../img/black_ai.jpg") ;
+        background-size : cover ;*/
+     
+    
+    
+        
+    }
+    
+    .homeText{
+    
+    font-size: 1.6vw;
+    font-family: 'Her-Gilwonok';
+    padding: 1vh;
+    letter-spacing: 0.2vw;
+    
+    }
+    
+    
+    .outerofhome >img{
+    margin: 0 auto;
+    
+    }
+}
+
+
+
+
+
+
