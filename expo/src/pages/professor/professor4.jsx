@@ -9,7 +9,7 @@ const professor = (props) => {
 
     return(
 
-        <div className="outerofouter">
+        <div className="outerofprofessor">
          
             <div className="outer_container">
                 <div className="contents">

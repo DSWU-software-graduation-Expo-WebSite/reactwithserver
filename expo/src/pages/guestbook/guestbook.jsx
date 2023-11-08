@@ -82,8 +82,7 @@ function GuestBook(props){
       console.log("클릭했습니다.")
 
       if(cbValue)
-       axios.post("http://3.36.64.144/64fe0b75d198dbed47e2e9fa/comments", {
-    
+       axios.post("http://3.36.64.144/projects/64fe0b75d198dbed47e2e9fa/comments", {
         "createBy" : cbValue,
         "password" : pwValue,
         "phone" : pnValue,
@@ -128,6 +127,7 @@ function GuestBook(props){
           }
           else{
             sendComment();
+            
             window.location.reload();
             //4초 delay
             setTimeout(5000);

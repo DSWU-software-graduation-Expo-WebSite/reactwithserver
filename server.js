@@ -85,8 +85,7 @@ const collectionName = 'project';
 async function connectMongoDB() {
   try {
     const client = await mongodb.MongoClient.connect(mongoURL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+
     });
     console.log('connect')
     return client.db(dbName).collection(collectionName);
@@ -103,11 +102,6 @@ async function connectMongoDB() {
 app.use(express.json());
 
 app.use(express.urlencoded({ extended: true })); // URL-encoded 형식의 요청 바디를 파싱하는 미들웨어
-
-
-
-
-
 
    // 프로젝트 생성 API 엔드포인트 (일종의 프로젝트 아이디 생성...?)
    app.post('/projects', async (req, res) => {
