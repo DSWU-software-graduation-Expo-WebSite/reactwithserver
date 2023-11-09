@@ -24,12 +24,10 @@ function GuestBook(props){
         const jsonString = JSON.stringify(response.data);
        // console.log(jsonString);
         const dataArray = JSON.parse(jsonString);
-        //console.log(dataArray);
-
+        console.log("200");
 
         setData(dataArray);
       
-     
         setLoading(false);
       } catch (error) {
         console.error('에러 발생:', error);

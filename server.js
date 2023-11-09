@@ -216,7 +216,7 @@ function generateCommentId() {
       // 해당 프로젝트의 전체 댓글 조회
       const comments = project.comments;
      // console.log("comments 는 "+comments[0].createBy.toString())
-      //console.log(res.json(comments));
+     console.log(res.json(comments));
 
     } catch (error) {
 

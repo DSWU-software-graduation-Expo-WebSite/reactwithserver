@@ -102,9 +102,11 @@ function REBIT(){
         "content" :ctValue
         
 }).then((response) => {
-    console.log("200", response.data);
+
     if (response.status === 200) {
-   
+      
+      console.log("200", response.data);
+    
     }
 }).catch((error) => console.log(error.response));
     }
