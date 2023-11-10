@@ -70,10 +70,6 @@ app.get('/guestbook', function(req,res){
     res.sendFile(path.join(__dirname,'expo/build/index.html'))
     res.header("Access-Control-Allow-Origin", "*");
 })
-app.get('*', function(req,res){
-  res.sendFile(path.join(__dirname,'expo/build/index.html'))
-  res.header("Access-Control-Allow-Origin", "*");
-})
 
 
 
