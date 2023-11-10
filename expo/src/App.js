@@ -15,7 +15,6 @@ import Introduce from './pages/introduce/introduce'
 import Header from "./Header/header_new";
 import Footer from "./Footer/footer";
 
-
 import React from "react";
 
 
@@ -44,6 +43,7 @@ function App() {
         <Route path="/URECAR" exact element={<URECAR/>} />
         <Route path="/BBANGYA" exact element={<BBANGYA/>}/>
         <Route path="/guestbook" exact element={<GuestBook/>} />
+
       </Routes>
 
 

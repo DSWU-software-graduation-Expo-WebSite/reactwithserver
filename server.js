@@ -10,11 +10,18 @@ const cors = require('cors');
 
 /*----------------------------------------------------*/
 app.use(cors());
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'http://3.36.64.144'); // 클라이언트의 주소로 변경
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
 
-app.listen(3000, function(){
-    //console.log('listening on 3000')
-})
+
+
 app.use(express.static(path.join(__dirname,'expo/build')));
+app.use(express.static(path.join(__dirname,'expo/public')));
+
 app.get('/', function(req,res){
     res.sendFile(path.join(__dirname,'expo/build/index.html') );
     res.header("Access-Control-Allow-Origin", "*");
@@ -52,6 +59,7 @@ app.get('/FULLHOUSEMALL', function(req,res){
   res.header("Access-Control-Allow-Origin", "*");
 })
 //라우팅
+
 app.get('/ADMIN', function(req,res){
   res.sendFile(path.join(__dirname,'expo/build/index.html') );
   res.header("Access-Control-Allow-Origin", "*");
@@ -66,10 +74,23 @@ app.get('/BBANGYA', function(req,res){
 })
 app.get('/guestbook', function(req,res){
     res.sendFile(path.join(__dirname,'expo/build/index.html'))
+    res.header("Access-Control-Allow-Origin", "*");
+})
+app.get('*', function(req,res){
+  res.sendFile(path.join(__dirname,'expo/build/index.html'))
+  res.header("Access-Control-Allow-Origin", "*");
 })
 
 
 
+app.get('*', function(req,res){
+  res.sendFile(path.join(__dirname,'expo/build/index.html'))
+  res.header("Access-Control-Allow-Origin", "*");
+})
+
+app.listen(3000, function(){
+  console.log('listening on 3000')
+})
 exports.mongoDB=()=>{
     mongoose.connect('mongodb+srv://haein:haein6893@atlascluster.5ribwrk.mongodb.net/').then(()=>
     console.log('mongoDB connected')).catch(()=>console.log('failed'));

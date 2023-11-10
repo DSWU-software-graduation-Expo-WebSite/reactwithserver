@@ -44,8 +44,10 @@ const professor = (props) => {
                     <div className="partition">
                         
                     </div>
-                    <div className="youtube">
-                    <YouTube
+           
+                    
+                </div>
+                <YouTube
                     
                     videoId={"cHPTjNabuiY"} //동영상 주소
                     opts={{
@@ -58,14 +60,10 @@ const professor = (props) => {
                     },
                     }}
                     onReady={(e) => {
-                    e.target.mute(); //소리 끔
+                    //e.target.mute(); //소리 끔
                     }}
                     onEnd={(e)=>{e.target.stopVideo(0);}} //비디오 전부 재생됐을때
                     />
-
-                    </div>
-                    
-                </div>
                 <div className="greeting">
              
    

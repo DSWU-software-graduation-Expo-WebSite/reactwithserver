@@ -5,7 +5,6 @@ import "./professor.css";
 
 import YouTube from "react-youtube";
 
-import Footer from '../../Footer/footer.jsx'
 
 const professor = (props) => {
 
@@ -15,6 +14,7 @@ const professor = (props) => {
         <div className="outerofprofessor">
          
             <div className="outer_container">
+                
                 <div className="contents">
                     
              
@@ -47,27 +47,26 @@ const professor = (props) => {
                         
                     </div>
 
-                    <div className="youtube">
-                    <YouTube
-           
-                            videoId={"fCABJvjzacg"} //동영상 주소
-                            opts={{
-                            width:"100%",
-                            playerVars: {
-                            autoplay: 0, //자동 재생 여부 
-                            modestbranding: 1, //컨트롤 바에 유튜브 로고 표시 여부
-                            loop: 1, //반복 재생
-                            //반복 재생으로 재생할 플레이 리스트
-                            },
-                            }}
-                            onReady={(e) => {
-                            e.target.mute(); //소리 끔
-                            }}
-                            onEnd={(e)=>{e.target.stopVideo(0);}} //비디오 전부 재생됐을때
-                    />
-                    </div>
-                    
+   
                 </div>
+
+                <YouTube
+           
+           videoId={"fCABJvjzacg"} //동영상 주소
+           opts={{
+           width:"100%",
+           playerVars: {
+           autoplay: 0, //자동 재생 여부 
+           modestbranding: 1, //컨트롤 바에 유튜브 로고 표시 여부
+           loop: 1, //반복 재생
+           //반복 재생으로 재생할 플레이 리스트
+           },
+           }}
+           onReady={(e) => {
+           //e.target.mute(); //소리 끔
+           }}
+           onEnd={(e)=>{e.target.stopVideo(0);}} //비디오 전부 재생됐을때
+   />
                 <div className="greeting">
               
 
@@ -92,7 +91,6 @@ const professor = (props) => {
      
 
                     </div>
-                    <Footer></Footer>
                    
             </div>
 

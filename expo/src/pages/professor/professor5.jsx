@@ -5,7 +5,7 @@ import YouTube from "react-youtube";
 
 import Footer from '../../Footer/footer.jsx'
 
-const professor = (props) => {
+function professor(){
 
 
     return(
@@ -44,32 +44,29 @@ const professor = (props) => {
         
                     </div>
 
-                    <div className="youtube">
-
-                    <YouTube
-
-                        videoId={"Fs7b3xJ9vfE"} //동영상 주소
-                        opts={{
-                        width:"100%",
-                        playerVars: {
-                        autoplay: 0, //자동 재생 여부 
-                        modestbranding: 1, //컨트롤 바에 유튜브 로고 표시 여부
-                        loop: 1, //반복 재생
-                        //반복 재생으로 재생할 플레이 리스트
-                        },
-                        }}
-                        onReady={(e) => {
-                        e.target.mute(); //소리 끔
-                        }}
-                        onEnd={(e)=>{e.target.stopVideo(0);}} //비디오 전부 재생됐을때
-                            />
-
-                    </div>
+                 
                     
                 </div>
                 <div className="greeting">
                    
-       
+                          
+                <YouTube
+
+videoId={"Fs7b3xJ9vfE"} //동영상 주소
+opts={{
+width:"100%",
+playerVars: {
+autoplay: 0, //자동 재생 여부 
+modestbranding: 1, //컨트롤 바에 유튜브 로고 표시 여부
+loop: 1, //반복 재생
+//반복 재생으로 재생할 플레이 리스트
+},
+}}
+onReady={(e) => {
+//e.target.mute(); //소리 끔
+}}
+onEnd={(e)=>{e.target.stopVideo(0);}} //비디오 전부 재생됐을때
+    />
                 <p className="greeting">
                 사랑하는 학우 여러분들. 끝없는 고민과 열정으로 학기를 달려와 졸업작품 전시까지 준비하느라 정말 고생이 많았습니다. 수업과 과제, 졸업준비와 진로 결정까지 대학생활의 매 순간이 어렵고 힘들었겠지만, 여러분들은 무한한 가능성을 가진 소프트웨어 공학을 선택하였고, 그 선택은 디지털 시대에 더 나은 미래를 향해 나아가는 길을 확장하게 만들 것이라 믿어 의심치 않습니다. 
                 <br></br>

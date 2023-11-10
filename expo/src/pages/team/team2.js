@@ -276,7 +276,7 @@ function PUPPYWATCH(){
            },
            }}
            onReady={(e) => {
-           e.target.mute(); //소리 끔
+           //e.target.mute(); //소리 끔
            }}
            onEnd={(e)=>{e.target.stopVideo(0);}} //비디오 전부 재생됐을때
          />
@@ -294,7 +294,7 @@ function PUPPYWATCH(){
                   },
                   }}
                   onReady={(e) => {
-                  e.target.mute(); //소리 끔
+                  //e.target.mute(); //소리 끔
                   }}
                   onEnd={(e)=>{e.target.stopVideo(0);}} //비디오 전부 재생됐을때
           />
