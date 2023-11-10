@@ -6,6 +6,7 @@ import images from './image/index.js';
 import Front from "../front"
 
 
+
 const GraduateList = () => {
     const members = [
         { name: "강수연", groupName: "디지털\n인클루전"},

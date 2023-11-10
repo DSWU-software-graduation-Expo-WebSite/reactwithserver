@@ -8,7 +8,7 @@ import Front from "../front"
 import {AiFillEdit,AiOutlineCloseCircle,AiOutlineSend} from "react-icons/ai";
 //axios.defaults.withCredentials = true;
 
-
+import Footer from '../../Footer/footer.jsx'
 function GuestBook(props){
 
   const [comments, setComments] = useState("0");
@@ -399,7 +399,7 @@ function GuestBook(props){
                         
                   
 
-
+<Footer></Footer>
         </div>
 
     );

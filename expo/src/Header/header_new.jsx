@@ -52,7 +52,7 @@ function Header_new(){
             <a href ="https://www.instagram.com/softelligence_/">INSTAGRAM</a>
             </li>
             <li className="navBar_menus_menu">
-            <a href ="https://www.instagram.com/softelligence_/">YOUTUBE</a>
+            <a href ="https://www.youtube.com/watch?v=nceSqc9wnAk&t=11s">YOUTUBE</a>
             </li>
         
             </ul>
@@ -130,7 +130,7 @@ function Header_new(){
                 <li onClick={()=>(
                     setIsOpen(!isOpen)
                 )}>
-                <a href ="https://www.youtube.com/watch?v=nceSqc9wnAk&t=11s">INSTAGRAM</a>
+                <a href ="https://www.youtube.com/watch?v=nceSqc9wnAk&t=11s">YOUTUBE</a>
                 </li>
               
               

@@ -6,7 +6,7 @@ import "./projects_main.css";
 
 import Front from "../front"
 
-
+import Footer from '../../Footer/footer.jsx'
 
 
 function Arrayprc2() {
@@ -107,6 +107,7 @@ function Arrayprc2() {
 
     
     return (
+
         <div className="outerofproject" 
         //onScroll={handleScroll}
         >
@@ -162,7 +163,8 @@ function Arrayprc2() {
         </div>
 
         </div>
-       
+   
+
     );
 }
 

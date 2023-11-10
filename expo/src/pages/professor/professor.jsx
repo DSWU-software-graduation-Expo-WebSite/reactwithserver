@@ -5,6 +5,7 @@ import "./professor.css";
 
 import YouTube from "react-youtube";
 
+import Footer from '../../Footer/footer.jsx'
 
 const professor = (props) => {
 
@@ -91,6 +92,7 @@ const professor = (props) => {
      
 
                     </div>
+                    <Footer></Footer>
                    
             </div>
 

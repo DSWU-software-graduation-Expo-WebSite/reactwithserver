@@ -8,10 +8,12 @@ import softelligence from "../../img/softelligence.jpg"
 import "./home.css"
 
 
+import Footer from '../../Footer/footer.jsx'
 
 function Home(){
 
     return(
+        <>
         <div className="outerofhome">
             
             <span className="homeText">software+</span>
@@ -20,8 +22,9 @@ function Home(){
 
             <span className="homeText">Intelligence</span>
             <span className="homeText">DSWU software, 1th Graduation Exhibition Archive</span>
-            
+          
             </div>
-
+  <Footer></Footer>
+  </>
     );
 }export default Home;

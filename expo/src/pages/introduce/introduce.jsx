@@ -28,7 +28,7 @@ import 이현주 from'../../img/gpc/이현주.jpg'
 import 장소영 from'../../img/gpc/장소영.jpg'
 import 정수현 from'../../img/gpc/정수현.jpg'
 import 조은솔 from'../../img/gpc/조은솔.jpg'
-
+import Footer from '../../Footer/footer.jsx'
 SwiperCore.use([Navigation, Pagination,Autoplay]);
 
 
@@ -646,6 +646,8 @@ return(
 
       
     </div>
+
+    <Footer></Footer>
 
         </div>
 
