@@ -13,7 +13,10 @@ import Footer from '../../Footer/footer.jsx'
 function Home(){
 
     return(
-        <>
+ <outerofouter>
+
+
+
         <div className="outerofhome">
             
             <span className="homeText">software+</span>
@@ -24,7 +27,8 @@ function Home(){
             <span className="homeText">DSWU software, 1th Graduation Exhibition Archive</span>
           
             </div>
-  <Footer></Footer>
-  </>
+            <Footer></Footer>
+            </outerofouter>
+
     );
 }export default Home;
