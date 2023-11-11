@@ -99,6 +99,8 @@ function GuestBook(props){
 
 
     const commentClick =() =>{
+      sendComment();
+      /*
       Swal.fire({
         title: '개인정보 수집 및 활용 동의서',
         html:'<div classname="alertpopup"><hr></hr>[수집하는 개인정보 항목]<hr></hr>이름, 연락처, 비밀번호<hr></hr>[개인정보의 수집 및 이용목적]<hr></hr>방명록 작성자의 댓글 수정 및 삭제 시 확인절차로 사용됩니다.<hr></hr>[개인정보의 보유 및 이용기간 및 파기]<hr></hr>이용자의 개인정보는 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체없이 파기하며, 보유기간은 최대 3년을 넘기지 않는 것을 원칙으로 한다.<hr></hr>[부적절한 게시글 삭제]<hr></hr>욕설, 비방, 부적절한 게시글(홍보, 광고, 음란물 등)은 예고 없이 삭제됩니다.</div>',
@@ -106,7 +108,7 @@ function GuestBook(props){
         confirmButtonText: '동의',
         denyButtonText: `취소`,
       }).then((result) => {
-        /* Read more about isConfirmed, isDenied below */
+
         if (result.isConfirmed) {
           if(cbValue==''){
             Swal.fire('작성자 이름을 작성해주세요.', '', 'info');
@@ -124,7 +126,7 @@ function GuestBook(props){
             Swal.fire('내용을 작성해주세요', '', 'info');
           }
           else{
-            sendComment();
+            
             
             window.location.reload();
             //4초 delay
@@ -135,8 +137,8 @@ function GuestBook(props){
           
         } else if (result.isDenied) {
           Swal.fire('댓글을 작성할 수 없습니다.', '', 'info')
-        }
-      })
+        } 
+      })*/
 
     }
 
