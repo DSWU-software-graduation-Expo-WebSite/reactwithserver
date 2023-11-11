@@ -48,11 +48,11 @@ function Header_new(){
             <Link to="/guestbook">GUESTBOOK</Link>
             </li>
 
-            <li className="navBar_menus_menu">
-            <a href ="https://www.instagram.com/softelligence_/">INSTAGRAM</a>
+            <li className="navBar_menus_menu"  onClick={window.location.replace("https://www.instagram.com/softelligence_/")}>
+            INSTAGRAM
             </li>
-            <li className="navBar_menus_menu">
-            <a href ="https://www.youtube.com/watch?v=nceSqc9wnAk&t=11s">YOUTUBE</a>
+            <li className="navBar_menus_menu"  onClick={window.location.replace("https://www.youtube.com/watch?v=nceSqc9wnAk&t=11s")}>
+            YOUTUBE
             </li>
         
             </ul>
