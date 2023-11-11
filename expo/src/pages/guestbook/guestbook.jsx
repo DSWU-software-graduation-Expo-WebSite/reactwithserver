@@ -100,6 +100,8 @@ function GuestBook(props){
 
     const commentClick =() =>{
       sendComment();
+      Swal.fire('댓글작성이 완료되었습니다.', '', 'success')
+      window.location.reload();
       /*
       Swal.fire({
         title: '개인정보 수집 및 활용 동의서',
