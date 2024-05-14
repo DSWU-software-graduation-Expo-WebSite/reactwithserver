@@ -17,7 +17,7 @@
 | [정수현](https://github.com/suhyun6363) | [오주원](https://github.com/joowoniese) |
 | [조은솔](https://github.com/haydenCho) | [장소영](https://github.com/place0) |
 | | [김주영](https://github.com/Kimjuyoung09)|
-| | [박해인](https://github.com/femmefatalehaein) |
+| | [구연우](https://github.com/oownoey) |
 ### ⏰ 개발기간
 ` 2023.03.03 ` → ` 2023.09.13일 `
 
