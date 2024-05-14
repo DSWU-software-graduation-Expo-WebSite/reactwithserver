@@ -19,7 +19,7 @@
 | | [김주영](https://github.com/Kimjuyoung09)|
 | | [구연우](https://github.com/oownoey) |
 ### ⏰ 개발기간
-` 2023.03.03 ` → ` 2023.09.13일 `
+` 2023.03.03 ` → ` 2023.09.13 `
 
 ### 🔧 사용스택
 <img src="https://img.shields.io/badge/JSX-FF6F00?style=for-the-badge&logo=jsx&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"></br>
