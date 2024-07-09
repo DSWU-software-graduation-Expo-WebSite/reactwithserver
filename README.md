@@ -6,8 +6,7 @@
 <img src="https://github.com/DSWU-software-graduation-Expo-WebSite/reactwithserver/assets/75514808/3bb6f9b6-d416-43c3-aba4-cba91e6452ec.png" width="296">
 </br>
 
-
-### 👩‍💻 developer
+### 👩‍💻 Archive developer
 |Frontend|Backend|
 |:---:|:---:|
 | [박해인](https://github.com/femmefatalehaein) | [박해인](https://github.com/femmefatalehaein) |
@@ -26,7 +25,9 @@
 <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white"> <img src="https://img.shields.io/badge/nodedotjs-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white"></br>
 <img src="https://img.shields.io/badge/amazone EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white">
 
-### 🖥 preview
+### 🖥 Archive preview
+
+
 
 ### ✅ result
 https://www.dswusoftware.com
