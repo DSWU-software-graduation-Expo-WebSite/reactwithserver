@@ -16,8 +16,7 @@
     "swiper": "^10.2.0"
   },
   "scripts": {
-    "dev": "nodemon server.js",
-    "build" : "webpack"
+    "dev": "nodemon server.js"
   },
   "proxy": "http://localhost:8080"
 }
