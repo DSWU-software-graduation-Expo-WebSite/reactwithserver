@@ -17,6 +17,7 @@
   },
   "scripts": {
     "dev": "nodemon server.js"
+    "build" : "webpack"
   },
   "proxy": "http://localhost:8080"
 }
